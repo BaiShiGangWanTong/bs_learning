@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户注册的表单</title>
+	</head>
+	<body>
+		<!--
+			用户注册：
+				用户名
+				密码
+				确认密码
+				性别
+				兴趣爱好
+				学历
+				简介
+		-->
+		<!--form 表单-->
+		<form action="http://localhost:8080/jd/reg" <!--action属性制定服务器地址-->
+			用户名
+			<input type="text" name="username"/><br>
+			密码
+			<input type="password" name="password"/><br>
+			确认密码
+			<input type="password"/><br>
+			性别
+			<input type="radio" name="gender" value="1"/>男
+			<input type="radio" name="gender" value="0"/>女
+			<br>
+			兴趣爱好
+			<input type="checkbox" name="interest" value="smoke"/>抽烟
+			<input type="checkbox" name="interest" value="drink"/>喝酒
+			<input type="checkbox" name="interest" value="firehead"/>烫头
+			<br>
+			学历
+			<select name="grade">
+				<option value="gz">高中</option>
+				<option value="dz">大专</option>
+				<option value="bk" selected>本科</option>
+				<option value="master">硕士</option>
+			</select>
+			<br>
+			简介
+			<textarea rows="10" cols="10" name="introduce"></textarea>
+			<br>
+			<input type="submit" value="注册"/>
+			<input type="reset" value="清空"/>
+		</form>
+	</body>
+</html>
